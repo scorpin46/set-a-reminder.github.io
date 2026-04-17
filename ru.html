@@ -266,14 +266,14 @@
   
     <link rel="icon" type="image/png" href="favicon.svg">
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        //document.addEventListener('DOMContentLoaded', () => {
             const url = new URL(location.href);
             if (url.searchParams.has('go-to-extension')){
                  window.history.replaceState({}, document.title, window.location.pathname);
                 location.href= 'https://chromewebstore.google.com/detail/set-a-reminder/okbopdkididkejgihepekdmohfomnnhc?hl=ru';
                  //document.querySelector('.btn-chrome')?.click()
             }
-        })
+        //})
     </script>
 </head>
 <body>
