@@ -264,12 +264,20 @@
     <meta name="twitter:card" content="summary_large_image">
   
     <link rel="icon" type="image/png" href="favicon.svg">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const url = new URL(location.href);
+            if (url.searchParams.has('go-to-extension')){
+                location.href = document.querySelector('.btn-chrome')?.click()
+            }
+        })
+    </script>
 </head>
 <body>
     <h1>Set a Reminder</h1>
     <div class="images">
-        <img src="slide1-ru.png" alt="Скриншот расширения Set a Reminder">
-        <img src="slide2-ru.png" alt="Пример работы расширения">
+        <img src="slide1-ru.png" loading="lazy" alt="Скриншот расширения Set a Reminder">
+        <img src="slide2-ru.png" loading="lazy" alt="Пример работы расширения">
     </div>
     <main>
   <div class="container">
