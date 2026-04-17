@@ -270,7 +270,8 @@
             const url = new URL(location.href);
             if (url.searchParams.has('go-to-extension')){
                  window.history.replaceState({}, document.title, window.location.pathname);
-                 document.querySelector('.btn-chrome')?.click()
+                location.href= 'https://chromewebstore.google.com/detail/set-a-reminder/okbopdkididkejgihepekdmohfomnnhc?hl=ru';
+                 //document.querySelector('.btn-chrome')?.click()
             }
         })
     </script>
